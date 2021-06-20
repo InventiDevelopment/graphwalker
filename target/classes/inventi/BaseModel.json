@@ -1,0 +1,139 @@
+{
+  "models": [
+    {
+      "name": "BaseModel",
+      "id": "60225de0-8b58-11eb-a543-612f241c8ceb",
+      "generator": "random(edge_coverage(100))",
+      "actions": [],
+      "vertices": [
+        {
+          "id": "68472cd0-8b58-11eb-a543-612f241c8ceb",
+          "name": "v_homeNotSignedPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 126,
+            "y": 144
+          }
+        },
+        {
+          "id": "688774b0-8b59-11eb-a543-612f241c8ceb",
+          "name": "v_signInPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 456,
+            "y": 42
+          }
+        },
+        {
+          "id": "8e6954f0-8b59-11eb-a543-612f241c8ceb",
+          "name": "v_homeSignedPage",
+          "sharedState": "v_homeSignedPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 460,
+            "y": 289
+          }
+        },
+        {
+          "id": "a85db390-8b5b-11eb-9fa2-614be636f8f9",
+          "name": "v_profilePage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 370,
+            "y": 498
+          }
+        },
+        {
+          "id": "b45ed250-8b5b-11eb-9fa2-614be636f8f9",
+          "name": "v_profileSettingPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 168,
+            "y": 324
+          }
+        },
+        {
+          "id": "bf33c190-8b65-11eb-9fa2-614be636f8f9",
+          "name": "Start",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": -84,
+            "y": -6
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "cb126430-8b65-11eb-9fa2-614be636f8f9",
+          "name": "e_openBrowser",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "bf33c190-8b65-11eb-9fa2-614be636f8f9",
+          "targetVertexId": "68472cd0-8b58-11eb-a543-612f241c8ceb"
+        },
+        {
+          "id": "bbf19a70-8b5b-11eb-9fa2-614be636f8f9",
+          "name": "e_clickProfileSettings",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "a85db390-8b5b-11eb-9fa2-614be636f8f9",
+          "targetVertexId": "b45ed250-8b5b-11eb-9fa2-614be636f8f9"
+        },
+        {
+          "id": "c213f490-8b59-11eb-a543-612f241c8ceb",
+          "name": "e_clickSignIn",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "68472cd0-8b58-11eb-a543-612f241c8ceb",
+          "targetVertexId": "688774b0-8b59-11eb-a543-612f241c8ceb"
+        },
+        {
+          "id": "e5ac5a00-8b59-11eb-a543-612f241c8ceb",
+          "name": "e_clickHome",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "688774b0-8b59-11eb-a543-612f241c8ceb",
+          "targetVertexId": "68472cd0-8b58-11eb-a543-612f241c8ceb"
+        },
+        {
+          "id": "fbb5b840-8b5a-11eb-9fa2-614be636f8f9",
+          "name": "e_submitLoginData",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "688774b0-8b59-11eb-a543-612f241c8ceb",
+          "targetVertexId": "8e6954f0-8b59-11eb-a543-612f241c8ceb"
+        },
+        {
+          "id": "bb337a90-8b5b-11eb-9fa2-614be636f8f9",
+          "name": "e_clickMyProfile",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "8e6954f0-8b59-11eb-a543-612f241c8ceb",
+          "targetVertexId": "a85db390-8b5b-11eb-9fa2-614be636f8f9"
+        },
+        {
+          "id": "bc7ebf40-8b5b-11eb-9fa2-614be636f8f9",
+          "name": "e_clickLogout",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "b45ed250-8b5b-11eb-9fa2-614be636f8f9",
+          "targetVertexId": "68472cd0-8b58-11eb-a543-612f241c8ceb"
+        }
+      ],
+      "startElementId": "bf33c190-8b65-11eb-9fa2-614be636f8f9"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "models": [
+    {
+      "name": "PostModel",
+      "id": "f69efdda-2d36-42f4-a214-6825b5ab310e",
+      "generator": "random(edge_coverage(100))",
+      "actions": [],
+      "vertices": [
+        {
+          "id": "9eb2caad-524e-43e9-82de-5060abb21f01",
+          "name": "v_homeSignedPage",
+          "sharedState": "v_homeSignedPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 243.49261984390142,
+            "y": 153.57353500762974
+          }
+        },
+        {
+          "id": "6ad618ad-7f6c-42cf-b602-92c251f179dd",
+          "name": "v_addPostPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 453.9250030517578,
+            "y": 23.449996948242188
+          }
+        },
+        {
+          "id": "f9e4c699-1df0-4f04-b44a-396e5019e49b",
+          "name": "v_postDetailPage",
+          "actions": [],
+          "requirements": [],
+          "properties": {
+            "x": 515.9250030517578,
+            "y": 249.4499969482422
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "96eff1d0-64eb-411a-ab90-64193be964af",
+          "name": "e_clickNewPost",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "9eb2caad-524e-43e9-82de-5060abb21f01",
+          "targetVertexId": "6ad618ad-7f6c-42cf-b602-92c251f179dd"
+        },
+        {
+          "id": "832990e2-52c5-479b-ba48-847a27f796eb",
+          "name": "e_submitNewPost",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "6ad618ad-7f6c-42cf-b602-92c251f179dd",
+          "targetVertexId": "f9e4c699-1df0-4f04-b44a-396e5019e49b"
+        },
+        {
+          "id": "f5035607-c042-4580-af1f-842138616a4a",
+          "name": "e_clickHome",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "f9e4c699-1df0-4f04-b44a-396e5019e49b",
+          "targetVertexId": "9eb2caad-524e-43e9-82de-5060abb21f01"
+        },
+        {
+          "id": "7311ae8c-3571-4f3d-992e-3481d55a536e",
+          "name": "e_clickHome",
+          "actions": [],
+          "requirements": [],
+          "properties": [],
+          "sourceVertexId": "6ad618ad-7f6c-42cf-b602-92c251f179dd",
+          "targetVertexId": "9eb2caad-524e-43e9-82de-5060abb21f01"
+        }
+      ]
+    }
+  ]
+}
